@@ -7,7 +7,7 @@ lazy val `sam-sns-seed` = (project in file("."))
     libraryDependencies += "com.amazonaws"        % "aws-java-sdk-sns"     % "1.11.255",
     libraryDependencies += "com.gu"              %% "scanamo"              % "1.0.0-M3",
 
-    resolvers += Resolver.url("bintray-dnvriend-ivy-sbt-plugins", url("http://dl.bintray.com/dnvriend/sbt-plugins"))(Resolver.ivyStylePatterns)
+    resolvers += Resolver.url("bintray-dnvriend-ivy-sbt-plugins", url("http://dl.bintray.com/dnvriend/sbt-plugins"))(Resolver.ivyStylePatterns),
     resolvers += Resolver.bintrayRepo("dnvriend", "maven"),
 
     scalaVersion := "2.12.4",
